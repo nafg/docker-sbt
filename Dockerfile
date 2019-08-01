@@ -9,6 +9,6 @@ RUN \
   apt-get update && \
   apt-get install -y nodejs build-essential sbt docker.io gcc g++ make yarn wget python-pip && \
   pip install --upgrade pip docker-compose && \
-  echo '#!/usr/bin/env sh" > /usr/local/bin/amm && \
+  echo '#!/usr/bin/env sh' > /usr/local/bin/amm && \
   curl -L https://github.com/lihaoyi/Ammonite/releases/download/1.6.9/2.13-1.6.9 >> /usr/local/bin/amm && \
   chmod +x /usr/local/bin/amm
