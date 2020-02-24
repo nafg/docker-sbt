@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11:slim
+FROM adoptopenjdk/openjdk10:slim
 
 RUN \
   curl -sL https://deb.nodesource.com/setup_12.x | bash - && \
