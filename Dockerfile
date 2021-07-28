@@ -6,7 +6,7 @@ RUN \
   echo "deb https://repo.scala-sbt.org/scalasbt/debian /" | tee /etc/apt/sources.list.d/sbt_old.list && \
   curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x2EE0EA64E40A89B84B2DF73499E82A75642AC823" | apt-key add && \
   apt-get update && \
-  apt-get install -y nodejs build-essential sbt docker.io gcc g++ make yarn wget python3-pip && \
+  apt-get install -y nodejs build-essential sbt docker.io gcc g++ make wget python3-pip && \
   npm install -g yarn && \
   pip install --upgrade pip docker-compose && \
   echo '#!/usr/bin/env sh' > /usr/local/bin/amm && \
