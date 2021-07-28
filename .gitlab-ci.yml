@@ -1,0 +1,3 @@
+build:
+    image: google/cloud-sdk
+    script: gcloud builds submit -t gcr.io/gitlab-runner-189405/docker-sbt
